@@ -5,7 +5,7 @@ namespace log_line
     std::string message(std::string line)
     {
         int start = line.find(":") + 2;
-        return line.substr(start, line.size() - start);
+        return line.substr(start);
     }
 
     std::string log_level(std::string line)
